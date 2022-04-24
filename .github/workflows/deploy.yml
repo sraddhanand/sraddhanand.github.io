@@ -28,7 +28,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           # Build output to publish to the `gh-pages` branch:
           publish_dir: ./build
           # The following lines assign commit authorship to the official
@@ -38,4 +38,3 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: ${{ secrets.USER_ID }}
           user_email: ${{ secrets.USER_EMAIL }}
-          external_repository: sraddhanand/sraddhanand.github.io
