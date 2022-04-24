@@ -51,39 +51,17 @@ const config = {
         },
         items: [
           { to: "docs/aws/aws-aurora", label: "AWS" },
-          {
-            type: 'doc',
-            docId: 'terraform/providers',
-            position: 'left',
-            label: 'Terraform',
-          },
-        { to: "docs/mongo/mongod_config", label: "CAP" },
-        { to: "docs/docker/commands", label: "Containers" },
-        { to: "docs/kubernetes/architecture", label: "Kubernetes" },
-        { to: "docs/git/git-commands", label: "DevOps" },
-          
-          {
-            href: 'https://github.com/sraddhanand',
-            label: 'GitHub',
-            position: 'right',
-          },
+          { type: 'doc', docId: 'terraform/providers', position: 'left', label: 'Terraform'},
+          { to: "docs/mongo/mongod_config", label: "CAP" },
+          { to: "docs/docker/commands", label: "Containers" },
+          { to: "docs/kubernetes/architecture", label: "Kubernetes" },
+          { to: "docs/devops-resources", label: "DevOps" },
+          { href: 'https://github.com/sraddhanand', label: 'GitHub', position: 'right' },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Terraform',
-                to: '/docs/terraform/providers',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
                 label: 'LinkedIn',
                 href: 'https://www.linkedin.com/in/sraddhanand-c/',
@@ -92,18 +70,15 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/infracoder7',
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
                 label: 'GitHub',
                 href: 'https://github.com/sraddhanand',
               },
+              {
+                label: 'Medium',
+                href: 'https://medium.com/@sraddhanand',
+              },
             ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()}`,
       },
       prism: {

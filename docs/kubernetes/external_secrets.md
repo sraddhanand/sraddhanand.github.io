@@ -28,13 +28,11 @@ aws iam create-role --role-name K8S-ES-role --assume-role-policy-document file:/
 ``` 
 
 ### Helm deploy
+- [GithubRepo](https://github.com/external-secrets/external-secrets)
 - To use the external seccrets, K8S cluster needs ``custom resource definition`` and a controller (pod) to get the secret values.
 - Use helm chart to deploy the required objects.
 ```bash
 helm repo add external-secrets https://external-secrets.github.io/kubernetes-external-secrets/
 helm install [RELEASE_NAME] external-secrets/kubernetes-external-secrets
 ``
-- 
 
-create external secret
-read the secrets

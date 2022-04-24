@@ -94,3 +94,8 @@ When connecting to a replica set, the mongo shell will redirect the connection t
   - along with isMaster() status, it is display roleback information.
 - **rs.printReplicationInfo()**:
   - Displays oplog info such as size, first event time, last event time.
+
+## Connection String
+```sh
+mongodb://myDBReader:D1fficultP%40ssw0rd@mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/?authSource=admin&replicaSet=myRepl
+```
